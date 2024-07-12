@@ -6,8 +6,8 @@
   tasks:
     
     - name: Copy .vimrc file to home directory
-      ansible.builtin.file:
-        src: .vimrc
+      ansible.builtin.template:
+        src: vimrc.j2
         dest: "/home/{{ item }}/.vimrc"
       loop:
         - valenzsx
