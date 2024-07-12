@@ -1,0 +1,4 @@
+.vscode
+roles/*
+*.cfg
+playbooks/setup.yml

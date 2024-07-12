@@ -1,0 +1,10 @@
+---
+- name: Deploy vimrc
+  hosts: "{{ Hosts }}"
+
+  tasks:
+    
+    - name: Copy .vimrc file to home directory
+      ansible.builtin.copy:
+        src: .vimrc
+        dest: ~/.vimrc
