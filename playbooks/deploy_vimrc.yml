@@ -8,6 +8,4 @@
     - name: Copy .vimrc file to home directory
       ansible.builtin.template:
         src: vimrc.j2
-        dest: "/home/{{ item }}/.vimrc"
-      loop:
-        - valenzsx
+        dest: /home/valenzsx/.vimrc
