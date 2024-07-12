@@ -1,6 +1,6 @@
 ---
 - name: Deploy vimrc
-  hosts: "{{ Hosts }}"
+  hosts: all
 
   tasks:
     
